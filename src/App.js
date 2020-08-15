@@ -1,25 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { atom, RecoilRoot } from "recoil";
+// import AddTodo from "./components/AddToDo.js";
+// import Todos  from "./components/Todos.js";
+// import useLocalStorage from './hooks/useLocalStorage.js';
+import TodoWrapper from "./components/TodoWrapper.js"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <RecoilRoot>
+      <div className="App">
+        <header className="App-header">
+          <p>
+           Howdy ToDoody
+          </p>
+          {/* <AddTodo todoListState={todoListState} setPersistedTodoList={setPersistedTodoList}/>
+          <Todos todoListState={todoListState}/> */}
+          <TodoWrapper/>
+        </header>
+      </div>
+      </RecoilRoot>
   );
 }
 

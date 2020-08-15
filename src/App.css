@@ -7,6 +7,42 @@
   pointer-events: none;
 }
 
+.App .to-do-item{
+  list-style: none;
+  margin: 10px;
+}
+
+.App .to-do-text{
+  font-size: 14px;
+  color: pink;
+  margin-right: 10px;
+}
+
+.App .delete-btn{
+  border: none;
+  background: transparent;
+  color: lightblue;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.App .todo-input{
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 30px;
+  width: 250px;
+  color: pink;
+  background: transparent;
+}
+
+.App .add-item{
+  color: white;
+  font-size: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
